@@ -1,9 +1,5 @@
-Make,Model,MSRP,Resale Value,Insurance1,Insurance2,Insurance3,Insurance4,Insurance5,Maintainance1,Maintainance2,Maintainance3,Maintainance4,Maintainance5,Fuel Economy,Safety Rating
-,,,,,,,,,,,,,,,
-ford,escape,"$26,340 ","$12,481 ","$1,160 ","$1,195 ","$1,231 ","$1,268 ","$1,306 ","$1,160 ","$1,195 ","$1,231 ","$1,268 ","$1,306 ",22 city/ 28 hwy,5
-,,,,,,,,,,,,,,,
-honda,cr-v,"$30,000 ","$18,999 ","$1,059 ","$1,091 ","$1,123 ","$1,157 ","$1,192 ","$1,059 ","$1,091 ","$1,123 ","$1,157 ","$1,192 ",25 city/ 31 hwy,5
-,,,,,,,,,,,,,,,
-hyundai,santa-fe,"$33,995 ","$15,977 ","$1,261 ","$1,299 ","$1,338 ","$1,378 ","$1,419 ","$1,261 ","$1,299 ","$1,338 ","$1,378 ","$1,419 ",22 city/ 29 hwy,no rating
-,,,,,,,,,,,,,,,
-toyota,rav4,"$34,569 ","$15,788 ","$1,249 ","$1,286 ","$1,325 ","$1,365 ","$1,406 ","$1,249 ","$1,286 ","$1,325 ","$1,365 ","$1,406 ",22 city/ 28 hwy,5
+Make,Model,MSRP,Resale Value,Insurance (After 1 Year),Insurance (After 2 Year),Insurance (After 3 Year),Insurance (After 4 Year),Insurance (After 5 Year),Maintainance (After 1 Year),Maintainance (After 2 Year),Maintainance (After 3 Year),Maintainance (After 4 Year),Maintainance (After 5 Year),City Fuel Economy,Hwy Fuel Economy,Safety Rating
+Ford,Escape,"$26,340 ","$12,481 ","$1,160 ","$1,195 ","$1,231 ","$1,268 ","$1,306 ","$1,160 ","$1,195 ","$1,231 ","$1,268 ","$1,306 ",22,28,5
+Honda,CR-V,"$30,000 ","$18,999 ","$1,059 ","$1,091 ","$1,123 ","$1,157 ","$1,192 ","$1,059 ","$1,091 ","$1,123 ","$1,157 ","$1,192 ",25,31,5
+Hyundai,Santa Fe,"$33,995 ","$15,977 ","$1,261 ","$1,299 ","$1,338 ","$1,378 ","$1,419 ","$1,261 ","$1,299 ","$1,338 ","$1,378 ","$1,419 ",22,29,no rating
+Toyota,Rav 4,"$34,569 ","$15,788 ","$1,249 ","$1,286 ","$1,325 ","$1,365 ","$1,406 ","$1,249 ","$1,286 ","$1,325 ","$1,365 ","$1,406 ",22,28,5
