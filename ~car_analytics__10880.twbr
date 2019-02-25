@@ -1,0 +1,696 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook source-build='2018.3.2 (20183.18.1219.1533)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='For Tableau (car_data_cleaned)' inline='true' name='federated.1ei4yf815bz92l1c4eglv1oamosk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='car_data_cleaned' name='excel-direct.0klfjus0rzuwj91dgd0na0rjo4m8'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/james/Documents/Masters School Documents/Data Vizualization/data_visualization_project/car_data_cleaned.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0klfjus0rzuwj91dgd0na0rjo4m8' name='For Tableau' table='[&apos;For Tableau$&apos;]' type='table'>
+          <columns gridOrigin='A1:J37:no:A1:J37:1' lost='0' outcome='1' processed='79'>
+            <column datatype='string' name='Make' ordinal='0' />
+            <column datatype='string' name='Model' ordinal='1' />
+            <column datatype='integer' name='MSRP' ordinal='2' />
+            <column datatype='integer' name='Resale Value' ordinal='3' />
+            <column datatype='integer' name='Year' ordinal='4' />
+            <column datatype='integer' name='Insurance Costs' ordinal='5' />
+            <column datatype='integer' name='Maintenance Costs' ordinal='6' />
+            <column datatype='integer' name='City Fuel Eco' ordinal='7' />
+            <column datatype='integer' name='Hwy Fuel Eco' ordinal='8' />
+            <column datatype='integer' name='Safety Rating' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Make</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Make]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>Make</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSRP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MSRP]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>MSRP</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resale Value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Resale Value]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>Resale Value</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insurance Costs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Insurance Costs]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>Insurance Costs</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Maintenance Costs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Maintenance Costs]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>Maintenance Costs</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City Fuel Eco</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[City Fuel Eco]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>City Fuel Eco</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hwy Fuel Eco</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hwy Fuel Eco]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>Hwy Fuel Eco</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Safety Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Safety Rating]</local-name>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias>Safety Rating</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[For Tableau]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J37:no:A1:J37:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>79</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Combined Eco' datatype='real' name='[Calculation_1025976314526486528]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0.55*[City Fuel Eco] + 0.45 * [Hwy Fuel Eco]' />
+      </column>
+      <column caption='Msrp' datatype='integer' name='[MSRP]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.420655' measure-ordering='alphabetic' measure-percentage='0.579345' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Eco'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='For Tableau (car_data_cleaned)' name='federated.1ei4yf815bz92l1c4eglv1oamosk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ei4yf815bz92l1c4eglv1oamosk'>
+            <column caption='Combined Eco' datatype='real' name='[Calculation_1025976314526486528]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0.55*[City Fuel Eco] + 0.45 * [Hwy Fuel Eco]' />
+            </column>
+            <column datatype='integer' name='[City Fuel Eco]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Hwy Fuel Eco]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1025976314526486528]' derivation='Sum' name='[sum:Calculation_1025976314526486528:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City Fuel Eco]' derivation='Sum' name='[sum:City Fuel Eco:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hwy Fuel Eco]' derivation='Sum' name='[sum:Hwy Fuel Eco:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:City Fuel Eco:qk]' field-type='quantitative' scope='cols' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Hwy Fuel Eco:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:City Fuel Eco:qk]' scope='cols' value='City Fuel Economy (Miles Per Gallon)' />
+            <format attr='title' class='0' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Hwy Fuel Eco:qk]' scope='rows' value='Hwy Fuel Economy (Miles Per Gallon)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' />
+              <text column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Calculation_1025976314526486528:qk]' />
+              <text column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Hwy Fuel Eco:qk]</rows>
+        <cols>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:City Fuel Eco:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:City Fuel Eco:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Hwy Fuel Eco:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]</field>
+                  <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Calculation_1025976314526486528:qk]</field>
+                  <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:City Fuel Eco:qk]</field>
+                  <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Hwy Fuel Eco:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Ford&quot;</value>
+                <value>24.700000000000003</value>
+                <value>22</value>
+                <value>28</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='17' y='-22' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:City Fuel Eco:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Hwy Fuel Eco:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]</field>
+                  <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Calculation_1025976314526486528:qk]</field>
+                  <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:City Fuel Eco:qk]</field>
+                  <field>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Hwy Fuel Eco:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Toyota&quot;</value>
+                <value>24.700000000000003</value>
+                <value>22</value>
+                <value>28</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-19' y='-22' />
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+    <worksheet name='Insurance Costs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='For Tableau (car_data_cleaned)' name='federated.1ei4yf815bz92l1c4eglv1oamosk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ei4yf815bz92l1c4eglv1oamosk'>
+            <column datatype='integer' name='[Insurance Costs]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Insurance Costs]' derivation='Sum' name='[sum:Insurance Costs:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Year:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Insurance Costs:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Insurance Costs:qk]' scope='rows' value='Insurance Costs (US Dollars)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Insurance Costs:qk]</rows>
+        <cols>[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Year:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='MSRP'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='For Tableau (car_data_cleaned)' name='federated.1ei4yf815bz92l1c4eglv1oamosk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ei4yf815bz92l1c4eglv1oamosk'>
+            <column caption='Msrp' datatype='integer' name='[MSRP]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MSRP]' derivation='Sum' name='[sum:MSRP:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:MSRP:qk]' scope='cols' value='MSRP (US Dollars)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk] / [federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Model:nk])</rows>
+        <cols>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:MSRP:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Maintenance Costs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='For Tableau (car_data_cleaned)' name='federated.1ei4yf815bz92l1c4eglv1oamosk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ei4yf815bz92l1c4eglv1oamosk'>
+            <column datatype='integer' name='[Maintenance Costs]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Maintenance Costs]' derivation='Sum' name='[sum:Maintenance Costs:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Year:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Maintenance Costs:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Maintenance Costs:qk]' scope='rows' value='Maintenance Costs (US Dollars)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Maintenance Costs:qk]</rows>
+        <cols>[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Year:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Resale Value'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='For Tableau (car_data_cleaned)' name='federated.1ei4yf815bz92l1c4eglv1oamosk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ei4yf815bz92l1c4eglv1oamosk'>
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Resale Value]' role='measure' type='quantitative' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Resale Value]' derivation='Sum' name='[sum:Resale Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Resale Value:qk]' scope='cols' value='Resale Value (US Dollars)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk] / [federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Model:nk])</rows>
+        <cols>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Resale Value:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Safety Rating'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Safety Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='For Tableau (car_data_cleaned)' name='federated.1ei4yf815bz92l1c4eglv1oamosk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ei4yf815bz92l1c4eglv1oamosk'>
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Safety Rating]' role='measure' type='quantitative' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model]' derivation='None' name='[none:Model:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Safety Rating]' derivation='Sum' name='[sum:Safety Rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Safety Rating:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk] / [federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Model:nk])</rows>
+        <cols>[federated.1ei4yf815bz92l1c4eglv1oamosk].[sum:Safety Rating:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Safety Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5AC0A4CF-8F2C-47C6-A04B-FBBA0187EA52}' />
+    </window>
+    <window class='worksheet' name='Insurance Costs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5B7E4EC2-3640-4325-8D19-8FC431E3866F}' />
+    </window>
+    <window class='worksheet' name='Maintenance Costs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CDAD98D-BB56-4DBD-B1F5-7ADA9048CE99}' />
+    </window>
+    <window class='worksheet' name='MSRP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E095B670-7CF2-4AEC-81FC-B5EF2C9AAD18}' />
+    </window>
+    <window class='worksheet' name='Resale Value'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{626ED1D5-A863-4D48-9302-58B1493D29B3}' />
+    </window>
+    <window class='worksheet' name='Eco'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ei4yf815bz92l1c4eglv1oamosk].[none:Make:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{01C4CF57-BAA8-455B-98A2-F5CF73CF8549}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{DA2259D1-E87E-4C8B-8A75-9C3D33F23C03}' />
+    </window>
+  </windows>
+</workbook>
